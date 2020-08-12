@@ -724,13 +724,6 @@ header{
 	}
 }
 .wrap{
-	.about-desc{
-		.bold-text {
-			z-index: -1; 
-		}
-	}
-}
-.wrap{
 	padding: 0;
 	@include media-breakpoint-down(sm){
 		margin-top: 40px;

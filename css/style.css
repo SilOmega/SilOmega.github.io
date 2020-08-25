@@ -7881,7 +7881,8 @@ header {
 @media (max-width: 767.98px) {
   .about-section .author-img {
     display: block;
-    height: 40%; } }
+    height: 300%;
+    background-position: top;} }
 
 .wrap {
   padding: 0; }

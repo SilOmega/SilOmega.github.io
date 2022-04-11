@@ -82,11 +82,11 @@
 							<p>
                 <img src="images/Radiance/Logo.PNG" alt="" class="img-fluid rounded mx-auto d-block">
               </p>
-							<p>Radiance is a vertical slice where you play as Clarus, a human infused with a mysterious light and an unknown past which 
-								is trying to escape from space station invaded by dark creatures. Use the light manipulator to complete physics puzzles 
+							<p>Radiance is a vertical slice where you play as Clarus, a human infused with a mysterious light and an unknown past who 
+								is trying to escape from a space station invaded by dark creatures. Use the light manipulator to complete physics puzzles 
 								and shoot the enemies while collecting Datapads to learn the lore of the game. Clarus will loose light over time and he 
-								will be forced back when he ran out of it. Puzzle progress won't be lost but lives are not infinite so better not be too lazy.</p>
-							<p>This project was developed by a team of forteen people (5 programmers, 4 designers, 5 artist) as part 
+								will be forced back to the start when he runs out of it. Puzzle progress won't be lost but lives are not infinite so better not be too lazy.</p>
+							<p>This project was developed by a team of 14 people (5 programmers, 4 designers, 5 artists) as part 
 								of my MSc Video Game Developer course at Birmingham City University.</p>
 							<h2 style="text-align:center">
 								<a href="https://casper-hoegalmen.itch.io/radiance-beta-build">Download</a>
@@ -103,12 +103,14 @@
                 <img src="images/Radiance/MainMenu.png" alt="" class="img-fluid">
               </p>
 							<h2 class="mb-3 mt-5">My Role</h2>
-              <p>Loop mechanic: as the game includes a looping mechanic I created a system to keep track of time and loops left before death
+              <p>Loop mechanic: as the game includes a looping mechanic I developed a system to keep track of time and loops left before death
 								but also to manage the distributed process of resetting only specific world elements between cycles.</p>
-							<p>G-Light Orb: special item which extend the timer when picked up.</p>
-              <p>Inventory: a system to store and read Datapads collected around the game. This allowed also interaction with world object
+							<p>G-Light Orb: collectible item which extend the loop timer when picked up, implemented using an interface for custom interaction and
+								spatialised sound for more immersivity.</p>
+              <p>Inventory: a system to store Datapads collected around the game and read them on the inventory widget. Allows interaction with world object
 							based on what is hold by the player.</p>
-              <p>Datapad: collectible object which can be read to learn more about the story of the game.</p>
+              <p>Datapad & Database: collectible object which can be read to learn more about the story of the game. Datapads' information are stored in a 
+								master database implemented as an Unreal Data Asset, this avoids duplication of information and eases modifications from designers.</p>
               <div class="tag-widget post-tag-container mb-5 mt-5">
                 <div class="tagcloud">
                   <a href="#" class="tag-cloud-link">Back to Top</a>

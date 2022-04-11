@@ -82,7 +82,7 @@
 							<p>
                 <img src="images/ImpossibleRescue/Logo.png" alt="" class="img-fluid rounded mx-auto d-block">
               </p>
-							<p>Impossible Rescue is a 2D platformer where the player controls Shadow, a drone hacking a mainframe to retrieve a powerful stolen AI. 
+							<p>Impossible Rescue is a 2D platformer where the player controls Shadow, a drone hacking a mainframe to retrieve a stolen powerful AI. 
 								Solve puzzles and gain new movement abilities to progress through all six levels but be careful about the mainframe defensive measures. </p>
 							<p>This project was developed by a team of three programmers as part of my MSc Video Game Developer
 							course at Birmingham City University.</p>
@@ -94,22 +94,22 @@
               </div>
               <p></p>
               <h2 class="mb-3 mt-5">Inspirations</h2>
-              <p>The given stakeholder brief requested the use two different razor products, Manic Miner for its precision platforming and Thomas 
-								was Alone for the simple shapes. As a team we decided to embrace even Celeste as inspiration for its fast paced gameplay and abilities
+              <p>The given stakeholder brief requested the use two different razor products, "Manic Miner" for its precision platforming and "Thomas 
+								was Alone" for the simple shapes. As a team we decided to embrace even "Celeste" as inspiration for its fast paced gameplay and abilities
 								to traverse the map.</p>
               <p>
                 <img src="images/ImpossibleRescue/MainMenu.png" alt="" class="img-fluid">
               </p>
 							<h2 class="mb-3 mt-5">My Role</h2>
               <p>Level generation and managing: loading all the elements present in the levels and assuring their correct functioning during all states
-								of the game In order to easyly create and design levels we used a tilemap editor called Tiled which is natively supported by Cocos2d-X framework.
+								of the game. In order to easyly create and design levels we used a tilemap editor called Tiled which is natively supported by Cocos2d-X framework.
 								Due to outdated support I had to create a system to load simple shaped object from Tiled tilemap and transforming them into the actual
 								level elements. This system was then paired with a pooling rotation to create all elements at the start of the game and reuse them through
 								levels.</p>
-              <p>Platforms: our game had two differenct types of platform, crumbling one which disappear after being stepped on and travellator
-								which transport the character in a specific direction.</p>
-              <p>Enemies which moved along a path on an axys</p>
-              <p>Port: puzzle element which needs a key to be activated and contributes towards the progression to next level.</p>
+              <p>Platforms: our game had two differenct types of platform, a crumbling one which disappear after being stepped on and a travellator
+								which transports the character in a specific direction. Both of them uses Cocos2D-X Action system to perform movements over time.</p>
+              <p>Turret: enemy which moves along a given path on an single axys, it uses the Cocos2D-X Action system to perform actions over time</p>
+              <p>Port: puzzle element which needs a key and time to be activated, activation time is displayed through a filling bar. </p>
               <div class="tag-widget post-tag-container mb-5 mt-5">
                 <div class="tagcloud">
                   <a href="#" class="tag-cloud-link">Back to Top</a>

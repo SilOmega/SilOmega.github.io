@@ -1,9 +1,4 @@
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
   xxl: 1595px,
   fhd: 1900px,
   qhd: 2540px
@@ -14,10 +9,6 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
   xxl: 1540px,
   fhd: 1870px,
   qhd: 2500px
@@ -31,6 +22,22 @@ $font-primary: 'Poppins',Arial, sans-serif;
 $white: #fff;
 $black: #121212;
 $primary: #2f89fc;
+
+$grid-breakpoints: (
+  xxl: 1595px,
+  fhd: 1900px,
+  qhd: 2540px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xxl: 1540px,
+  fhd: 1870px,
+  qhd: 2500px
+);
 
 html {
 	// overflow-x: hidden;

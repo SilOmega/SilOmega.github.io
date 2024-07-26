@@ -1,3 +1,5 @@
+@import 'bootstrap/variables';
+
 $grid-breakpoints: (
   xxl: 1595px,
   fhd: 1900px,
@@ -15,29 +17,12 @@ $container-max-widths: (
 );
 
 @import 'bootstrap/bootstrap';
-@import 'bootstrap/variables';
 
 $font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #fff;
 $black: #121212;
 $primary: #2f89fc;
-
-$grid-breakpoints: (
-  xxl: 1595px,
-  fhd: 1900px,
-  qhd: 2540px
-);
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  xxl: 1540px,
-  fhd: 1870px,
-  qhd: 2500px
-);
 
 html {
 	// overflow-x: hidden;

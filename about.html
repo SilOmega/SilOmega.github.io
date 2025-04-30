@@ -40,14 +40,7 @@
 			<div class="img" style="background-image: url(images/author-2.JPG);"></div>
 			<div class="colorlib-table-cell js-fullheight">
 				<div class="row no-gutters">
-					<div class="col-md-12 text-center">
-						<h1 class="mb-4"><a href="index.html" class="logo">Gaetano Trovato</a></h1>
-						<ul>
-							<li><a href="index.html"><span><small>01</small>Home</span></a></li>
-							<li class="active"><a href="about.html"><span><small>02</small>CV</span></a></li>
-							<li><a href="portfolio.html"><span><small>03</small>Portfolio</span></a></li>
-							<li><a href="WorkPortfolio.html"><span><small>04</small>Work Portfolio</span></a></li>
-						</ul>
+					<div id ="nav-bar-options-placeholder" class="col-xl-12 text-center">
 					</div>
 				</div>
 			</div>
@@ -116,7 +109,7 @@
 								<div class="desc">
 									<h4>Programmer<span> - Lively</span> </h4>
 									<p class="location">UK</p>
-									<p class="description" align="justify">Worked on codename Phoenix unreleased rogue-lite multiplayer game [UEFN].</p>
+									<p class="description" align="justify">Worked on "Super Horde Survival" rogue-lite multiplayer game [UEFN].</p>
 								</div>
 								<div class="year">
 									<p>Apr 2024 - July 2024</p>
@@ -260,6 +253,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 
 		<footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -282,7 +276,9 @@
 					<div class="col-md-12 text-center">
 
 						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+							All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i>
+							by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 					</div>
 				</div>
@@ -290,7 +286,10 @@
 		</footer>
 
 		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		<div id="ftco-loader" class="show fullscreen">
+			<svg class="circular" width="48px" height="48px">
+				<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 	</div>
 
@@ -314,6 +313,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script>navBarOptions("about"); </script>
 
 </body>
 </html>

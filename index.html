@@ -42,14 +42,7 @@
 			<div class="img" style="background-image: url(images/author-2.JPG);"></div>
 			<div class="colorlib-table-cell js-fullheight">
 				<div class="row no-gutters">
-					<div class="col-md-12 text-center">
-						<h1 class="mb-4">Gaetano Trovato</h1>
-						<ul>
-							<li class="active"><a href="index.html"><span><small>01</small>Home</span></a></li>
-							<li><a href="about.html"><span><small>02</small>CV</span></a></li>
-							<li><a href="portfolio.html"><span><small>03</small>Portfolio</span></a></li>
-							<li><a href="WorkPortfolio.html"><span><small>04</small>Work Portfolio</span></a></li>
-						</ul>
+					<div id ="nav-bar-options-placeholder" class="col-xl-12 text-center">
 					</div>
 				</div>
 			</div>
@@ -171,38 +164,51 @@
 				<div class="row justify-content-center mb-5 pb-5">
 					<div class="col-ld-7 text-center heading-section ftco-animate">
 						<span>Portfolio</span>
-						<h2>Main Projects</h2>
+						<h2>Latest Projects</h2>
 					</div>
 				</div>
-				<div class="row no-gutters">
-					<div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-						<a class="image order-1 d-flex justify-content-center align-items-center" style="background-image: url('images/Radiance/Logo.PNG'); background-size: 100%;" data-scrollax=" properties: { translateY: '-30%'}"></a>
-						<div class="text order-2">
-							<h4 class="subheading">3rd-person action adventure - Unreal Engine 4 & C++</h4>
-							<h4 class="subheading">Role of Game Programmer</h4>
-							<h2 class="heading">Radiance (Work in progress)</h2>
-							<p>A vertical slice where you play as Clarus, a human with an unknown past which is trying to escape
-								from space station invaded by dark creatures. Be mindful of the time of bad things could happen.
-								This project was developed by a small team as part of my MSc Video Game Developer course at Birmingham City University.</p>
-							<p>
-								<a href="Radiance.html">View Project</a>			|
-								<a href="https://wotsern.itch.io/radiance">Download</a>
-						</div>
-					</div>
-					<div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-						<a class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/BossIsWaiting/BossWaitingTitle.PNG'); background-size: 100%; " data-scrollax=" properties: { translateY: '-30%'}"></a>
-						<div class="text order-1">
-							<h4 class="subheading">2D platform game - Unity & C#</h4>
-							<h4 class="subheading">Solo project</h4>
-							<h2 class="heading">The Boss is waiting</h2>
-							<p>A demo for a 2D action platform game made set in a dark dungeon. Run to the boss as fast as you can,
-								dealing with foes and traps across the path.</p>
-							<p>
-								<a href="BossWaiting.html">View Project</a>			|
-								<a href="https://github.com/SilOmega/The-Boss-is-waiting/blob/master/TheBossIsWaitingDemo.rar">Download</a></p>
-						</div>
+
+				<div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+					<a class="image order-1 d-flex justify-content-center align-items-center" style="background-image: url('images/SuperHoderSurvival.jpeg'); background-size: 100%;" data-scrollax=" properties: { translateY: '-30%'}"></a>
+					<div class="text order-2">
+						<h4 class="subheading">Rogue-lite multiplayer RPG - UEFN & Verse</h4>
+						<h4 class="subheading">Role of Programmer - Lively</h4>
+						<h2 class="heading">Super Horde Survival</h2>
+						<p>Play timed runs where you kill monsters to acquire experience and gold with up to 4 players. Each run players can
+							create a temporary build from a random pool of abilities and passives while gold allows to buy permanent upgrades
+							which will stay active across all runs</p>
+						<p>
+						<ul>
+							<li>Implemented an MVC UI architecture for easy re-usability</li>
+							<li>Expanded passives/abilities data system to an event-based system</li>
+							<li>Implemented time based passives based on async concurrency</li>
+							<li>Updated game loop to events to enforce correct run flow</li>
+						</ul>
+						</p>
+						<p><a href="https://www.fortnite.com/@nickeh30/1452-4675-8706?lang=en-US">Island code</a></p>
 					</div>
 				</div>
+
+				<div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+					<a class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/WarpedKartRacingVP.webp'); background-size: 100%;" data-scrollax=" properties: { translateY: '-30%'}"></a>
+					<div class="text order-1">
+						<h4 class="subheading">Port for Apple Vision Pro - Unity & C#</h4>
+						<h4 class="subheading">Role of Junior Programmer - Lively</h4>
+						<h2 class="heading">Warped Kart Racers</h2>
+						<p>Run off-line or online multiplayer kart races using a character from American Dad, Family Guy, King of the Hill and Solar Opposites.
+							Use gesture to play and navigate around the mixed-reality UI menus.</p>
+						<p>
+						<ul>
+							<li>Updated many UI elements to support a 3D environment</li>
+							<li>Updated many UI animation and tweens to support a 3D environment</li>
+							<li>Implemented OS level localisation for user authorisations outside of the game</li>
+							<li>Implemented additional tutorial steps for players coming from other versions of the game</li>
+						</ul>
+						</p>
+						<p><a href="https://apps.apple.com/us/app/warped-kart-racers/id1539378079">Store page</a></p>
+					</div>
+				</div>
+					
 			</div>
 		</section>
 
@@ -210,12 +216,13 @@
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-5">
 					<div class="col-md-7 text-center heading-section ftco-animate">
-						<h2><a href="portfolio.html">Full portfolio</a></h2>
+						<h2><a href="portfolio.html">Personal portfolio</a></h2>
+						<h2><a href="WorkPortfolio.html">Work portfolio</a></h2>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
 		<footer class="ftco-footer ftco-bg-dark ftco-section">
 			<div class="container">
 				<div class="row mb-5 justify-content-center">
@@ -236,7 +243,9 @@
 					<div class="col-md-12 text-center">
 
 						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+							All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i>
+							by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 					</div>
 				</div>
@@ -244,7 +253,10 @@
 		</footer>
 
 		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		<div id="ftco-loader" class="show fullscreen">
+			<svg class="circular" width="48px" height="48px">
+				<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 	</div>
 
@@ -268,6 +280,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script>navBarOptions("index"); </script>
 
 </body>
 </html>
